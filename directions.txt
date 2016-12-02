@@ -1,0 +1,14 @@
+
+I've created some synthetic data (attached); to get a sense of what
+working with this data looks like, please use it to answer these
+questions:
+ - What's the total charged over this time period?
+ - What's the most popular handset model?
+ - What is the mean number of balance inquiries per person?
+ - What is the mean degree (number of contacts) per person (including
+incoming and outgoing calls)?
+ - Which person has the largest asymmetry between incoming and outgoing contacts? How asymmetric is it?
+
+Then feel free to do any additional analysis you find interesting; briefly summarize your results.
+
+Please use python (and numpy if you need it).
