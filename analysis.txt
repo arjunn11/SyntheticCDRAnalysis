@@ -1,0 +1,19 @@
+Questions:
+
+1. Total Charge:  1219619.5
+
+2. Most popular handset model: motorola-c113
+ + Count: 33 | Total handsets: 98
+
+3. Mean number of balance inquiries per person:  96
+
+4. Mean degree of contacts per person:  22.68
+ + Assumption: Contacts is defined as calls and sms.
+ + Note: 2 people dont make any transactions (only in LineId.To)
+
+5. Person with largest asymmetry:  5
+ + Level of asymmetry:  -33 (Outgoing - Incoming Contacts)
+
+--------
+
+Additional Analysis
