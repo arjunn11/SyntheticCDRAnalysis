@@ -41,13 +41,13 @@ def process():
     print("Mean number of balance inquiries per person: ", num_balance_inquiries, '\n')
 
     #Mean degree of contacts per person (incoming and outgong)
-    #Assumption: Contacts is defined as calls and sms.
+    print('Assumption: Contacts is defined as calls and sms.')
     calls_df = df[df['Transaction'] == 'call']
     sms_df = df[df['Transaction'] == 'sms']
     #Multiply each count by two to include both incoming and outgoing.
     total_contacts = sms_df.count()[0]*2 + calls_df.count()[0]*2
     #Find number of unique people/handsets.
-    #Note: 2 people dont make any transactions (only in LineId.To)
+    print('Note: 2 people dont make any transactions (only in LineId.To)')
     unique_contacts = np.unique(df[['LineID.From', 'LineID.To']])
     #remove NaN values
     unique_contacts = unique_contacts[~np.isnan(unique_contacts)]
