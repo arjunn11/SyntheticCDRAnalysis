@@ -14,13 +14,10 @@ def text_to_csv():
             out_file.write('\n'.join(lines))
 
 def process():
-    #text_to_csv()
     df = pd.read_csv('syntheticCDR.csv')
     #Strip whitespace from DataFrame headers (column titles).
     df.rename(columns=lambda x: x.strip(), inplace=True)
     df['DateTime'] = pd.to_datetime(df['DateTime'])
-    #df['LineID.From'] = pd.to_
-    #print(df.head())
     #print(df.dtypes)
 
     #Set output to file.
@@ -68,7 +65,6 @@ def process():
     incoming_contacts = contacts_df['LineID.To'][~np.isnan(df['LineID.To'])]
     incoming_frequency = incoming_contacts.astype(int).value_counts().sort_index()
     person_asymmetry = outgoing_frequency - incoming_frequency
-    #print(person_asymmetry.isnull())
     #Remove nulls from Series
     person_asymmetry = person_asymmetry[~np.isnan(person_asymmetry)]
     #Convert frequency values from float to integer
@@ -78,8 +74,6 @@ def process():
     print(' + Level of asymmetry: ', person_asymmetry[max_asymmetry], '(Outgoing - Incoming Contacts)')
 
     print('\n--------\n\nAdditional Analysis')
-
-    print('\n')
 
 def main():
     process()
