@@ -29,7 +29,7 @@ def process():
     #Calculate total charged over this period of time.
     #.loc() handles indexing
     total_charge = df.loc[(df.Transaction == 'call') | (df.Transaction == 'sms'), 'Charge'].sum()
-    print('Questions:\n\n1. Total Charge: ', total_charge)
+    print('Questions:\n1. Total Charge: ', total_charge)
 
     #Find most popular handset model.
     #Total handsets
@@ -82,7 +82,6 @@ def process():
     print('\n')
 
 def main():
-    text_to_csv()
     process()
 
 if __name__ == '__main__':
