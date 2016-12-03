@@ -79,7 +79,10 @@ def process():
 
     print('\n--------\n\nAdditional Analysis')
 
+    print('\n')
+
 def main():
+    text_to_csv()
     process()
 
 if __name__ == '__main__':
