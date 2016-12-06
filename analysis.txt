@@ -14,17 +14,42 @@ Questions:
  + Note: 2 people dont make any transactions (only in LineId.To)
 
 5. Person with largest asymmetry:  5
- + Level of asymmetry (Outgoing - Incoming Contacts) -33
+ + Level of asymmetry (Outgoing - Incoming Contacts):  -33
 
 --------
 
 Additional Analysis
+
+Charges:
+
 Total Charge: 1219619.5
-['LineID.To', 'Charge']
-Max Charged User Spent:
-   LineID.To   Charge
-1        1.0  50938.5
-Min Charged User Spent:
-    LineID.To  Charge
-66       69.0    40.3 
+Max Charge / Person:
+    LineID.From   Charge
+3            3  39309.2
+Min Charge / Person:
+     LineID.From  Charge
+83           85   670.0
+Standard Deviation:  1068.23306996
+Coefficient of Variation:  1141121.89176
+
+Handsets:
+
+Most popular handset model:
+   Handset Model  # Users   % Users
+1  motorola-c113       33  0.336735
+Most Active Handset:
+   Handset Model  # Calls
+1  motorola-c113      478
+Least Active Handset Model:
+      Handset Model  # Calls
+0  blackberry curve      139
+
+Transactions:
+
+Transactions Table:
+       Transaction  # Transactions  # Users
+0  balance inquiry              96       60
+1             call            1036       98
+2              sms              98       51
+3            topup             107       66 
 
