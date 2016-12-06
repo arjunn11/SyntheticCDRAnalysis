@@ -1,20 +1,30 @@
+Assumptions: 
++ 100 people, but 98 models, as 2 people never had any transactions. 
++ Contacts is defined as calls and sms. This can be changed to just calls by removing the sms filter on the data.
 Questions:
 1. Total Charge:  1219619.5
 
 2. Most popular handset model: motorola-c113
  + Count: 33 | Total handsets: 98
 
-3. Mean number of balance inquiries per person:  96
+3. Mean number of balance inquiries per person:  0.96
 
 4. Mean degree of contacts per person:  22.68
  + Assumption: Contacts is defined as calls and sms.
  + Note: 2 people dont make any transactions (only in LineId.To)
 
 5. Person with largest asymmetry:  5
- + Level of asymmetry:  -33 (Outgoing - Incoming Contacts)
+ + Level of asymmetry (Outgoing - Incoming Contacts) -33
 
 --------
 
 Additional Analysis
-
+Total Charge: 1219619.5
+['LineID.To', 'Charge']
+Max Charged User Spent:
+   LineID.To   Charge
+1        1.0  50938.5
+Min Charged User Spent:
+    LineID.To  Charge
+66       69.0    40.3 
 
